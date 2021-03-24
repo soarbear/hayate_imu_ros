@@ -98,7 +98,7 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 - wrong checksum
 
-下記インフォメーションが出る際、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する、出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、IMUのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみる。
+下記インフォメーションが出る際、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する、hayate_imuの出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、hayate_imuのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみる。
 
 [INFO] [WallTime: 9876543210.0123456789] wrong checksum for topic id and msg
 
@@ -111,6 +111,8 @@ ex2:  output_rate_a: 100   output_rate_m: 70
 ex3:  output_rate_a: 70    output_rate_m: 70
 
 ex4:  output_rate_a: 50    output_rate_m: 50
+
+- hayate_imuのUSBを抜き挿しして、再起動させる。
 
 # 参考情報
 
