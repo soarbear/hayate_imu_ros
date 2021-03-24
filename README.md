@@ -4,9 +4,9 @@ hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayat
 
 # 動作環境
 
-- Ubuntu 16.04、 18.04、 20.04　推奨
+- Ubuntu 16.04 18.04 20.04 推奨
 
-- ROS kinetic、 melodic、 noetic　推奨
+- ROS kinetic melodic noetic 推奨
 
 # 使用手順
 
@@ -38,7 +38,7 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## フュージョン四元数の可視化
+## Publish Topic
 
 - USBポート番号をttyACM_hayateに固定する。
 
@@ -46,7 +46,9 @@ $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
-- params.yamlファイルのport番号を確認する。
+- params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_bを確認して、必要に応じて変更する。
+
+詳細については、以下のトラブルシューティングを参照する。
 
 $nano ./src/hayate_imu_ros/config/params.yaml
 
@@ -54,13 +56,17 @@ $nano ./src/hayate_imu_ros/config/params.yaml
 
 - hayate_imu_rosを起動する。
 
-$roslaunch hayate_imu_ros hayate_imu_demo.launch
+$roslaunch hayate_imu_ros hayate_imu.launch
 
 - また、USBポート番号のttyACM_hayateを解除する場合、
 
 $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
+
+## 6軸／9軸フュージョン四元数の可視化
+
+$roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # ROS Topicについて
 
@@ -87,6 +93,14 @@ $rostopic echo hayate_imu/magn
 $rostopic hz -w 10 hayate_imu/data
 
 $rostopic hz -w 10 hayate_imu/magn
+
+# トラブルシューティング
+
+- wrong checksum
+
+下記インフォメーションが出る際、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する、出力レートに関わるパラメータoutput_rate_a、output_rate_bを少しずつ下げてみるか、IMUのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみる。
+
+[INFO] [WallTime: *******.*******] wrong checksum for topic id and msg
 
 # 参考情報
 
