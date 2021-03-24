@@ -100,17 +100,17 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 下記インフォメーションが出る際、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する、出力レートに関わるパラメータoutput_rate_a、output_rate_bを少しずつ下げてみるか、IMUのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみる。
 
-[INFO] [WallTime: *******.*******] wrong checksum for topic id and msg
+[INFO] [WallTime: 9876543210.0123456789] wrong checksum for topic id and msg
 
 # 参考情報
 
 - 製品紹介
 
-<a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">icm-20948-cortex-m0内蔵-9軸imu-ros対応</a>
+<a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">icm-20948-cortex-m0内蔵-9軸imu-ros対応 | ROBOT翔・情報</a>
 
 - 販売店舗
 
-<a href="https://store.soarcloud.com/products/detail/136">9軸IMU hayate_imu ROS対応 | ロボット翔</a>
+<a href="https://store.soarcloud.com/products/detail/136">9軸IMU hayate_imu ROS対応 | ROBOT翔・販売</a>
 
 # リリース
 
