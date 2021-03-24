@@ -96,7 +96,7 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # トラブルシューティング
 
-- wrong checksum
+## wrong checksum
 
 下記インフォメーションが出る際、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する、hayate_imuの出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、hayate_imuのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみる。
 
@@ -113,6 +113,10 @@ ex3:  output_rate_a: 70    output_rate_m: 70
 ex4:  output_rate_a: 50    output_rate_m: 50
 
 - hayate_imuのUSBを抜き挿しして、再起動させる。
+
+## 9軸フュージョン
+
+場所によって、9軸フュージョンデータがおかしい場合がある。地磁気センサが環境(周囲の磁場)の影響を受けやすいであるため。
 
 # 参考情報
 
