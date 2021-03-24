@@ -105,8 +105,11 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 - パラメータ@params.yaml: 出力レートoutput_rate_a、output_rate_mの設定例
 
 ex1:  output_rate_a: 200   output_rate_m: 70
+
 ex2:  output_rate_a: 100   output_rate_m: 70
+
 ex3:  output_rate_a: 70    output_rate_m: 70
+
 ex4:  output_rate_a: 50    output_rate_m: 50
 
 # 参考情報
