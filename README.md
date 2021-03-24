@@ -38,7 +38,7 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## Publish Topic
+## Publish ROS Topic
 
 - USBポート番号をttyACM_hayateに固定する。
 
@@ -58,6 +58,18 @@ $nano ./src/hayate_imu_ros/config/params.yaml
 
 $roslaunch hayate_imu_ros hayate_imu.launch
 
+- Topicのデータを確認する。
+
+$rostopic echo hayate_imu/data
+
+$rostopic echo hayate_imu/magn
+
+- Topicの出力レートを確認する。
+
+$rostopic hz -w 10 hayate_imu/data
+
+$rostopic hz -w 10 hayate_imu/magn
+
 - また、USBポート番号のttyACM_hayateを解除する場合、
 
 $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
@@ -68,7 +80,7 @@ $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
-# ROS Topicについて
+# ROS Topic について
 
 - Topic: hayate_imu/data, Message: sensor_msgs/Imu 
 
@@ -81,18 +93,6 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 - Topic: hayate_imu/magn
 
 　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
-
-- Topicのデータを確認する。
-
-$rostopic echo hayate_imu/data
-
-$rostopic echo hayate_imu/magn
-
-- Topicの出力レートを確認する。
-
-$rostopic hz -w 10 hayate_imu/data
-
-$rostopic hz -w 10 hayate_imu/magn
 
 # トラブルシューティング
 
