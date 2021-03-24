@@ -1,0 +1,2 @@
+# set the udev rule , make the device_port
+KERNEL=="ttyACM*", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="e9ad", SYMLINK+="ttyACM_hayate", GROUP="dialout", MODE:="0777"

@@ -1,0 +1,6 @@
+<launch>
+	<!-- NODEの起動 -->
+	<include file="$(find hayate_imu_ros)/launch/hayate_imu.launch" />
+	<!-- RVIZで実演 -->	
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find hayate_imu_ros)/rviz/hayate_imu.rviz" />
+</launch>
