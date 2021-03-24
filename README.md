@@ -4,9 +4,9 @@ hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayat
 
 # 動作環境
 
-- Ubuntu 16.04以降　推奨
+- Ubuntu 16.04、 18.04、 20.04　推奨
 
-- ROS kinetic以降　推奨
+- ROS kinetic、 melodic、 noetic　推奨
 
 # 使用手順
 
