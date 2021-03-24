@@ -21,6 +21,7 @@ $rosversion -d
 $sudo apt-get install ros-<distro>-rosserial
 
 例えば、ROS Distributionは、melodicであれば、
+
 $sudo apt-get install ros-melodic-rosserial
 
 $sudo apt-get install ros-<distro>-imu-tools
@@ -40,12 +41,15 @@ $catkin_make
 ・USBポート番号をttyACM_hayateに固定する。
 
 $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
+
 $~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
 params.yamlファイルのport番号を確認する。
 
 $nano ./src/hayate_imu_ros/config/params.yaml
+
 または、
+
 $vim ./src/hayate_imu_ros/config/params.yaml
 
 ・hayate_imu_rosを起動する。
@@ -53,7 +57,9 @@ $vim ./src/hayate_imu_ros/config/params.yaml
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 また、USBポート番号のttyACM_hayateを解除する場合、
+
 $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
+
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 # ROS Topicについて
