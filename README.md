@@ -38,7 +38,7 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## Publish ROS Topic
+## ROS Topicの確認
 
 - USBポート番号をttyACM_hayateに固定する。
 
@@ -76,11 +76,7 @@ $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
-## 6軸／9軸フュージョン四元数の可視化
-
-$roslaunch hayate_imu_ros hayate_imu_demo.launch
-
-# ROS Topic について
+# ROS Topic/Messageについて
 
 - Topic: hayate_imu/data, Message: sensor_msgs/Imu 
 
@@ -93,6 +89,10 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 - Topic: hayate_imu/magn
 
 　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
+　　
+## 6軸／9軸フュージョン四元数の可視化
+
+$roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # トラブルシューティング
 
