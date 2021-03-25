@@ -48,7 +48,7 @@ $~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
-詳細については、以下のトラブルシューティングを参照する。
+併せて、以下のトラブルシューティングを参照する。
 
 $nano ./src/hayate_imu_ros/config/params.yaml
 
@@ -98,7 +98,7 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 ## wrong checksum
 
-下記インフォメーションが、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する。hayate_imuの出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、hayate_imuのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみると消える。
+下記インフォメーションは、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する。hayate_imuの出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、hayate_imuのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみると、下記インフォメーションは消える。
 
 [INFO] [WallTime: 9876543210.0123456789] wrong checksum for topic id and msg
 
