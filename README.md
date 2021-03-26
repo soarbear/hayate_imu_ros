@@ -10,7 +10,7 @@ hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayat
 
 # 使用手順
 
-## rosserial、rviz_imu_pluginのインストール
+## rosserial、rviz_imu_plugin install
 
 ※注意 以下のdistroをご使用のROS Distributionに入れ替える。
 
@@ -28,7 +28,7 @@ $sudo apt-get install ros-melodic-rosserial
 
 $sudo apt-get install ros-melodic-imu-tools
 
-## hayate_imu_rosのインストール
+## hayate_imu_ros install
 
 $cd ~/catkin_ws/src
 
@@ -38,7 +38,19 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## ROS Topicの確認
+## ROS Topic
+
+- Topic: hayate_imu/data, Message: sensor_msgs/Imu 
+
+　　-　ver.A 6軸フュージョン or ver.B 9軸フュージョン四元数, Message: geometry_msgs/Quaternion
+
+　　-　加速度(アクセル)3軸データ, Message: geometry_msgs/Vector3
+
+　　-　角速度(ジャイロ)3軸データ, Message: geometry_msgs/Vector3
+
+- Topic: hayate_imu/magn
+
+　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
 
 - USBポート番号をttyACM_hayateに固定する。
 
@@ -76,21 +88,7 @@ $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
-# ROS Topic/Messageについて
-
-- Topic: hayate_imu/data, Message: sensor_msgs/Imu 
-
-　　-　ver.A 6軸フュージョン or ver.B 9軸フュージョン四元数, Message: geometry_msgs/Quaternion
-
-　　-　加速度(アクセル)3軸データ, Message: geometry_msgs/Vector3
-
-　　-　角速度(ジャイロ)3軸データ, Message: geometry_msgs/Vector3
-
-- Topic: hayate_imu/magn
-
-　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
-　　
-## 6軸／9軸フュージョン四元数の可視化
+# 6軸／9軸フュージョン四元数の可視化
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
