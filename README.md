@@ -1,16 +1,16 @@
-# はじめに
+# 0.はじめに
 
 hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayate_imuのROS Package、その扱い方を以下に示す。
 
-# 対向環境
+# 1.対向環境
 
 - Ubuntu 16.04 18.04 20.04 推奨
 
 - ROS kinetic melodic noetic 推奨
 
-# 使用手順
+# 2.使用手順
 
-## Install rosserial、rviz_imu_plugin
+## 2.1 Install rosserial、rviz_imu_plugin
 
 ※注意 以下のdistroをご使用のROS Distributionに入れ替える。
 
@@ -28,7 +28,7 @@ $sudo apt-get install ros-melodic-rosserial
 
 $sudo apt-get install ros-melodic-imu-tools
 
-## Install hayate_imu_ros
+## 2.2 Install hayate_imu_ros
 
 $cd ~/catkin_ws/src
 
@@ -38,7 +38,7 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## Parameters
+## 2.3 Parameters
 
 - port: /dev/ttyACM_hayate
 
@@ -56,7 +56,7 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
 
-## Confirm Parameters
+## 2.4 Confirm Parameters
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
@@ -66,7 +66,7 @@ $nano ./src/hayate_imu_ros/config/params.yaml
 
 または、$vim ./src/hayate_imu_ros/config/params.yaml
 
-## Topics
+## 2.5 Topics
 
 - Topic: hayate_imu/data, Message: sensor_msgs/Imu 
 
@@ -80,7 +80,7 @@ $nano ./src/hayate_imu_ros/config/params.yaml
 
 　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
 
-## Confirm Topics
+## 2.6 Confirm Topics
 
 - USBポート番号をttyACM_hayateに固定する。
 
@@ -110,13 +110,13 @@ $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
-## 6軸／9軸フュージョン四元数の可視化
+## 2.7 6軸／9軸フュージョン四元数の可視化
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
-# トラブルシューティング
+# 3.トラブルシューティング
 
-## wrong checksum
+## 3.1 wrong checksum
 
 下記インフォメーションは、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する。hayate_imuの出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、hayate_imuのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみると、下記インフォメーションは消える。
 
@@ -134,20 +134,20 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 - hayate_imuのUSBを抜き挿しして、再起動させる。
 
-## 9軸フュージョン
+## 3.2 9軸フュージョン
 
 地磁気センサ使用のため、場所によって、9軸フュージョンは環境(周囲の磁場)の影響を受けやすい場合がある。
 
-# 参考情報
+# 4.参考情報
 
-- 製品紹介
+## 4.1 製品紹介
 
 <a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">ICM-20948 Cortex-M0+内蔵 9軸IMU 6軸／9軸フュージョン ROS対応 | ROBOT翔・技術情報</a>
 
-- 販売店舗
+## 4.2 販売店舗
 
 <a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン ROS対応 | ROBOT翔・販売</a>
 
-# リリース
+# 5. リリース
 
 v1.1 March 2021.
