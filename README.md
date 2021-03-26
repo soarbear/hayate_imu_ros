@@ -10,7 +10,7 @@ hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayat
 
 # 使用手順
 
-## rosserial、rviz_imu_plugin install
+## Install rosserial、rviz_imu_plugin
 
 ※注意 以下のdistroをご使用のROS Distributionに入れ替える。
 
@@ -28,7 +28,7 @@ $sudo apt-get install ros-melodic-rosserial
 
 $sudo apt-get install ros-melodic-imu-tools
 
-## hayate_imu_ros install
+## Install hayate_imu_ros
 
 $cd ~/catkin_ws/src
 
@@ -38,7 +38,25 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## ROS Topic
+## Parameters
+
+- port: /dev/ttyACM_hayate
+
+USBポート /dev/ttyACM* (デフォルト：/dev/ttyACM_hayate)
+
+- baud: 115200
+
+USBシリアルボーレート (デフォルト：115200 bps)
+
+- output_rate_a: 200
+
+加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：200Hz、レンジ：Min 1Hz ～ Max 200Hz)
+
+- output_rate_m: 70
+
+地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
+
+## Topics
 
 - Topic: hayate_imu/data, Message: sensor_msgs/Imu 
 
@@ -51,6 +69,8 @@ $catkin_make
 - Topic: hayate_imu/magn
 
 　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
+
+## Confirm Topics
 
 - USBポート番号をttyACM_hayateに固定する。
 
