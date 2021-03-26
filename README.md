@@ -56,6 +56,16 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
 
+## Confirm Parameters
+
+- params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
+
+併せて、以下のトラブルシューティングを参照する。
+
+$nano ./src/hayate_imu_ros/config/params.yaml
+
+または、$vim ./src/hayate_imu_ros/config/params.yaml
+
 ## Topics
 
 - Topic: hayate_imu/data, Message: sensor_msgs/Imu 
@@ -77,14 +87,6 @@ USBシリアルボーレート (デフォルト：115200 bps)
 $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
-
-- params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
-
-併せて、以下のトラブルシューティングを参照する。
-
-$nano ./src/hayate_imu_ros/config/params.yaml
-
-または、$vim ./src/hayate_imu_ros/config/params.yaml
 
 - hayate_imu_rosを起動する。
 
