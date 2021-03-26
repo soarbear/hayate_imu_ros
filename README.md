@@ -110,7 +110,7 @@ $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
-# 6軸／9軸フュージョン四元数の可視化
+## 6軸／9軸フュージョン四元数の可視化
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
