@@ -1,14 +1,14 @@
-# 0.はじめに
+# 0. はじめに
 
 hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayate_imuのROS Package、その扱い方を以下に示す。
 
-# 1.対向環境
+# 1. 対向環境
 
 - Ubuntu 16.04 18.04 20.04 推奨
 
 - ROS kinetic melodic noetic 推奨
 
-# 2.使用手順
+# 2. 使用手順
 
 ## 2.1 Install rosserial、rviz_imu_plugin
 
@@ -114,7 +114,7 @@ $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
-# 3.トラブルシューティング
+# 3. トラブルシューティング
 
 ## 3.1 wrong checksum
 
@@ -138,7 +138,7 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 地磁気センサ使用のため、場所によって、9軸フュージョンは環境(周囲の磁場)の影響を受けやすい場合がある。
 
-# 4.参考情報
+# 4. 参考情報
 
 ## 4.1 製品紹介
 
@@ -150,4 +150,4 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 # 5. リリース
 
-v1.1 March 2021.
+## v1.1 March 2021.
