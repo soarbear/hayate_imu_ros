@@ -142,7 +142,7 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 ## 4.1 製品紹介
 
-<a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">ICM-20948 Cortex-M0+内蔵 9軸IMU 6軸／9軸フュージョン ROS対応 | ROBOT翔・技術情報</a>
+<a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMU 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 ROS対応 | ROBOT翔・技術情報</a>
 
 ## 4.2 販売店舗
 
