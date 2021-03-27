@@ -1,6 +1,6 @@
 # 0. はじめに
 
-hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayate_imuのROS Package、その扱い方を以下に示す。
+hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayate_imuのROS Package、その扱い方は以下に示す。
 
 # 1. 対向環境
 
