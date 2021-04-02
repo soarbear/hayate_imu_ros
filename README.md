@@ -142,13 +142,13 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 ## 4.1 製品紹介
 
-<a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMU 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 ROS対応 | ROBOT翔・技術情報</a>
+<a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMU 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 低遅延 ROS対応 | ROBOT翔・技術情報</a>
 
 <a href="https://youtu.be/N3I52f4gxq4">9軸IMU 6軸／9軸シュージョン 出力レート225Hz ROS対応 | Youtube</a>
 
 ## 4.2 販売店舗
 
-<a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン ROS対応 | ROBOT翔・販売</a>
+<a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 ROS対応 | ROBOT翔・販売</a>
 
 # 5. リリース
 
