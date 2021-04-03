@@ -146,10 +146,10 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 <a href="https://youtu.be/N3I52f4gxq4">9軸IMU 6軸／9軸シュージョン 出力レート225Hz ROS対応 | Youtube</a>
 
-## 4.2 販売店舗
+## 4.2 取扱店舗
 
-<a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 ROS対応 | ROBOT翔・販売</a>
+<a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 ROS対応 | ROBOT翔</a>
 
 # 5. リリース
 
-## v1.1 March 2021.
+- v1.1 March 2021.
