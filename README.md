@@ -1,14 +1,14 @@
-# 0. はじめに Introduction
+# 0. はじめに
 
 hayate_imu_rosは、TDK Invencese ICM-20948を内蔵した9軸IMUセンサ hayate_imuのROS Package、その扱い方は以下に示す。
 
-# 1. 対向環境 Opposing Environment
+# 1. 対向環境
 
 - Ubuntu 16.04 18.04 20.04 推奨
 
 - ROS kinetic melodic noetic 推奨
 
-# 2. 使用手順 Instructions for use
+# 2. 使用手順
 
 ## 2.1 Install rosserial、rviz_imu_plugin
 
@@ -56,7 +56,7 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
 
-## 2.4 Parametersを確認する Confirm Parameters
+## 2.4 Confirm Parameters
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
@@ -80,7 +80,7 @@ $nano ./src/hayate_imu_ros/config/params.yaml
 
 　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
 
-## 2.6 Topicsを確認する Confirm Topics
+## 2.6 Confirm Topics
 
 - USBポート番号をttyACM_hayateに固定する。
 
@@ -110,11 +110,11 @@ $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
-## 2.7 6軸／9軸フュージョン四元数の可視化 Visualization of 6-axis/9-axis Fusion Quaternions
+## 2.7 6軸／9軸フュージョン四元数の可視化
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
-# 3. トラブルシューティング Trouble Shooting
+# 3. トラブルシューティング
 
 ## 3.1 wrong checksum
 
@@ -134,27 +134,27 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 - hayate_imuのUSBを抜き挿しして、再起動させる。
 
-## 3.2 9軸シュージョン 9-axis Fusion 
+## 3.2 9軸シュージョン
 
 地磁気センサ使用のため、場所によって、9軸フュージョンは環境(周囲の磁場、電気設備)の影響を受けやすい場合がある。
 
-# 4. リリース Release
+# 4. リリース
 
 - v1.1 March 2021.
 
-# 5. ライセンス License
+# 5. ライセンス
 
 - hayate_imu_ros Packageは、BSD-3-Clauseを遵守する。
 
-# 6. 参考情報 Reference
+# 6. 参考情報
 
-## 6.1 製品紹介 Product Introduction
+## 6.1 製品紹介
 
 <a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMU 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 低遅延 ROS対応 | ROBOT翔・技術情報</a>
 
 <a href="https://youtu.be/N3I52f4gxq4">9軸IMU 6軸／9軸シュージョン 出力レート225Hz ROS対応 | Youtube</a>
 
-## 6.2 取扱店舗 Store
+## 6.2 取扱店舗
 
 <a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 ROS対応 | ROBOT翔</a>
 
