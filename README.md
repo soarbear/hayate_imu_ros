@@ -138,18 +138,22 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 地磁気センサ使用のため、場所によって、9軸フュージョンは環境(周囲の磁場)の影響を受けやすい場合がある。
 
-# 4. 参考情報
+# 4. リリース
 
-## 4.1 製品紹介
+- v1.1 March 2021.
+
+# 5. リリース
+- hayate_imu_rosパッケージは、BSD-3-Clause を遵守する。
+
+# 6. 参考情報
+
+## 6.1 製品紹介
 
 <a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMU 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 低遅延 ROS対応 | ROBOT翔・技術情報</a>
 
 <a href="https://youtu.be/N3I52f4gxq4">9軸IMU 6軸／9軸シュージョン 出力レート225Hz ROS対応 | Youtube</a>
 
-## 4.2 取扱店舗
+## 6.2 取扱店舗
 
 <a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 ROS対応 | ROBOT翔</a>
 
-# 5. リリース
-
-- v1.1 March 2021.
