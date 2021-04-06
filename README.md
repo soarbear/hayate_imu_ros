@@ -144,7 +144,7 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 # 5. ライセンス
 
-- hayate_imu_ros Packageは、BSD-3-Clauseを遵守する。
+- 本ROS Package(hayate_imu_ros)に対して、BSD-3-Clauseが適応される。
 
 # 6. 参考情報
 
