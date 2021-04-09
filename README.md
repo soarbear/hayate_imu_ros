@@ -100,9 +100,9 @@ $rostopic echo hayate_imu/magn
 
 - Topicの出力レートを確認する。
 
-$rostopic hz -w 10 hayate_imu/data
+$rostopic hz -w 100 hayate_imu/data
 
-$rostopic hz -w 10 hayate_imu/magn
+$rostopic hz -w 100 hayate_imu/magn
 
 - また、USBポート番号のttyACM_hayateを解除する場合、
 
