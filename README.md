@@ -60,7 +60,7 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
-併せて、以下のトラブルシューティングを参照する。
+併せて、3.トラブルシューティングを参照する。
 
 $nano ./src/hayate_imu_ros/config/params.yaml
 
