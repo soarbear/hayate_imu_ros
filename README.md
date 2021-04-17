@@ -62,9 +62,9 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 併せて、3.トラブルシューティングを参照する。
 
-$nano ./src/hayate_imu_ros/config/params.yaml
+$nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
-または、$vim ./src/hayate_imu_ros/config/params.yaml
+または、$vim ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 ## 2.5 Topics
 
@@ -156,5 +156,5 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 ## 6.2 取扱店舗
 
-<a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 USB接続 ROS対応 | ROBOT翔</a>
+<a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 USB出力 ROS対応 | ROBOT翔</a>
 
