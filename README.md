@@ -1,6 +1,6 @@
 # 0. はじめに
 
-hayate_imu_rosは、TDK Invensense ICM-20948を内蔵した9軸IMUセンサ hayate_imuのROS Package、その扱い方は以下に示す。
+hayate_imu_rosは、TDK Invensense ICM-20948を内蔵した9軸IMUセンサ hayate imuのROS Package、その扱い方は以下に示す。
 
 # 1. 対向環境
 
@@ -60,9 +60,9 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
-- hayate_imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
+- パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
 
-併せて、4.トラブルシューティングを参照する。
+- 併せて、4.トラブルシューティングを参照する。
 
 $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
@@ -142,7 +142,7 @@ ex3:  output_rate_a: 70    output_rate_m: 70
 
 ex4:  output_rate_a: 50    output_rate_m: 50
 
-- hayate_imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
+- パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
 
 ## 4.2 9軸シュージョン
 
