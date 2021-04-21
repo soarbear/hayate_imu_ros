@@ -118,11 +118,11 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # 3. LED
 
-- Red 電源+5V
+- Red = 電源+5V
 
-- Blue パケット送受信
+- Blue = パケット送受信
 
-- Yellow 6軸／9軸フュージョン四元数出力 
+- Yellow = 6軸／9軸フュージョン四元数出力 
 
 # 4. トラブルシューティング
 
