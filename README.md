@@ -60,7 +60,9 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
-併せて、3.トラブルシューティングを参照する。
+- hayate_imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
+
+併せて、4.トラブルシューティングを参照する。
 
 $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
@@ -114,9 +116,17 @@ $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
-# 3. トラブルシューティング
+# 3. LED
 
-## 3.1 wrong checksum
+- Red 電源+5V
+
+- Blue パケット送受信
+
+- Yellow 6軸／9軸フュージョン四元数出力 
+
+# 4. トラブルシューティング
+
+## 4.1 wrong checksum
 
 下記インフォメーションは、IMUのUSB対向側装置が受信したパケットのCRCエラーに起因する。hayate_imuの出力レートに関わるパラメータoutput_rate_a、output_rate_mを少しずつ下げてみるか、hayate_imuのUSB対向側装置リソース(CPUクロック周波数、メモリ)をアップグレードしてみると、下記インフォメーションは消える。
 
@@ -134,27 +144,26 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 - hayate_imuのUSBを抜き挿しして、再起動させる。
 
-## 3.2 9軸シュージョン
+## 4.2 9軸シュージョン
 
 地磁気センサが、環境(周囲の磁場、電磁デバイス)の影響を受けやすい場合がある。
 
-# 4. リリース
+# 5. リリース
 
 - v1.1 March 2021.
 
-# 5. ライセンス
+# 6. ライセンス
 
 - 本ROS Package(hayate_imu_ros)に対して、BSD-3-Clauseが適用される。
 
-# 6. 参考情報
+# 7. 参考情報
 
-## 6.1 製品紹介
+## 7.1 製品紹介
 
 <a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMU 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 低遅延 ROS対応 | ROBOT翔・技術情報</a>
 
 <a href="https://youtu.be/N3I52f4gxq4">9軸IMU 6軸／9軸シュージョン 出力レート225Hz USB接続 ROS対応 | YouTube</a>
 
-## 6.2 取扱店舗
+## 7.2 取扱店舗
 
 <a href="https://store.soarcloud.com/products/detail/136">9軸IMU 6軸／9軸フュージョン 低遅延 USB出力 ROS対応 | ROBOT翔</a>
-
