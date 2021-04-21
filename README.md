@@ -118,7 +118,7 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # 3. LED
 
-- Red = 電源+5V
+- Red = 電源供給USB+5V
 
 - Blue = パケット送受信
 
