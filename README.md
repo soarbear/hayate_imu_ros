@@ -142,7 +142,7 @@ ex3:  output_rate_a: 70    output_rate_m: 70
 
 ex4:  output_rate_a: 50    output_rate_m: 50
 
-- hayate_imuのUSBを抜き挿しして、再起動させる。
+- hayate_imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
 
 ## 4.2 9軸シュージョン
 
