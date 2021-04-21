@@ -60,13 +60,13 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
-- パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
-
-- 併せて、4.トラブルシューティングを参照する。
-
 $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 または、$vim ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
+
+- パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
+
+- 併せて、4.トラブルシューティングを参照する。
 
 ## 2.5 Topics
 
