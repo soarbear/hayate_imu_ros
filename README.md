@@ -150,6 +150,8 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 # 5. リリース
 
+- v2.0 May 2021.
+
 - v1.1 March 2021.
 
 # 6. ライセンス
