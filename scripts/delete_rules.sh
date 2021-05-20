@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "delete remap the device serial port(ttyUSB*) of hayate_imu"
+echo "delete remap the device serial port(ttyACM*) of hayate_imu"
 echo "sudo rm /etc/udev/rules.d/hayate_imu.rules"
 sudo rm /etc/udev/rules.d/hayate_imu.rules
 echo ""
