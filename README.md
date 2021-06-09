@@ -70,17 +70,17 @@ $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 ## 2.5 Topics
 
-- Topic: hayate_imu/data, Message: sensor_msgs/Imu 
+- hayate_imu/data(sensor_msgs/Imu)
 
-　　-　ver.A 6軸フュージョン or ver.B 9軸フュージョン四元数, Message: geometry_msgs/Quaternion
+　　-　ver.A 6軸フュージョン or ver.B 9軸フュージョン四元数(geometry_msgs/Quaternion)
 
-　　-　加速度(アクセル)3軸データ, Message: geometry_msgs/Vector3
+　　-　加速度(アクセル)3軸データ(geometry_msgs/Vector3)
 
-　　-　角速度(ジャイロ)3軸データ, Message: geometry_msgs/Vector3
+　　-　角速度(ジャイロ)3軸データ(geometry_msgs/Vector3)
 
-- Topic: hayate_imu/magn
+- hayate_imu/magn(sensor_msgs/MagneticField)
 
-　　-　地磁気(コンパス)3軸データ, Message: geometry_msgs/Vector3
+　　-　地磁気(コンパス)3軸データ(geometry_msgs/Vector3)
 
 ## 2.6 Confirm Topics
 
