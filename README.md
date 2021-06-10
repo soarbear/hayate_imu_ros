@@ -2,7 +2,7 @@
 
 hayate_imu_rosは、TDK Invensense ICM-20948を内蔵した9軸IMUセンサ hayate imuのROS Package、その扱い方は以下に示す。
 
-# 1. 対向環境
+# 1. 使用環境
 
 - Ubuntu 16.04 18.04 20.04 推奨
 
