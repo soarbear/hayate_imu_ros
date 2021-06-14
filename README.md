@@ -118,7 +118,7 @@ $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
-# 3. LED
+# 3. LED表示
 
 - Red = 電源供給USB+5V
 
@@ -181,7 +181,7 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 　　-　角速度(ジャイロ)センサ　　±2000dps  
 　　-　地磁気(コンパス)センサ　　±4900µT  
 
-・ 較正　ICM-20928内蔵較正機能使用
+・ 較正機能　ICM-20928内蔵較正機能使用
 
 ・ 標準偏差(RMS-Noise)  
 　　-　加速度(アクセル)センサ　　±0.026313m/s^2(ノイズ帯域幅136Hz)  
