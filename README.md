@@ -50,13 +50,13 @@ USBポート /dev/ttyACM* (デフォルト：/dev/ttyACM_hayate)
 
 USBシリアルボーレート (デフォルト：115200 bps)
 
-- output_rate_a: 200
+- output_rate_a: 225
 
-加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：200Hz、レンジ：Min 1Hz ～ Max 200Hz)
+加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：225Hz、レンジ：Min 1Hz ～ Max 225Hz)
 
-- output_rate_m: 70
+- output_rate_m: 75
 
-地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
+地磁気出力レート(デフォルト：75Hz、レンジ：Min 1Hz ～ Max 75Hz))
 
 ## 2.4 パラメータの確認
 
