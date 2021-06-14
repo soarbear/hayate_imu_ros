@@ -4,8 +4,8 @@ port: /dev/ttyACM_hayate
 # USBシリアルボーレート (デフォルト：115200 bps)
 baud: 115200
 
-# 加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：200Hz、レンジ：Min 1Hz ～ Max 200Hz)
-output_rate_a: 200
+# 加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：225Hz、レンジ：Min 1Hz ～ Max 225Hz)
+output_rate_a: 225
 
-# 地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
-output_rate_m: 70
+# 地磁気出力レート(デフォルト：75Hz、レンジ：Min 1Hz ～ Max 75Hz))
+output_rate_m: 75
