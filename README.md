@@ -160,12 +160,46 @@ ex4:  output_rate_a: 50    output_rate_m: 50
 
 # 7. 参考情報
 
-## 7.1 製品紹介
+## 7.1 主な規格
+
+・ 型番　hayate_imu v2.0 ver.A 6軸フュージョン／ver.B 9軸フュージョン
+
+・ 内蔵チップ　Cortex-M0+、TDK Invensense ICM-20948(9軸)実装
+
+・ 外部接続　USB Type-Cコネクタ、USB+5V給電
+
+・ 最大出力レート
+　　-　ver.A 6軸フュージョン／ ver.B 9軸フュージョン四元数　225H
+　　-　加速度(アクセル)3軸センサ　　225Hz
+　　-　角速度(ジャイロ)3軸センサ　　225Hz
+　　-　地磁気(コンパス)3軸センサ　　75Hz
+
+・ 測定レンジ
+　　-　加速度(アクセル)センサ　　±16g
+　　-　角速度(ジャイロ)センサ　　±2000dps
+　　-　地磁気(コンパス)センサ　　±4900µT
+
+・ 較正　ICM-20928内蔵較正機能使用
+
+・ 標準偏差(RMS-Noise)　※6
+　　-　加速度(アクセル)センサ　　±0.026313m/s^2(ノイズ帯域幅136Hz)
+　　-　角速度(ジャイロ)センサ　　±0.0032520rad/s (ノイズ帯域幅154.3Hz)
+　　-　地磁気(コンパス)センサ　　±0.8µT
+
+・ 消費電力　50mW以下(環境温度21℃ 実測値)
+
+・ 寸法　30mm × 31.4mm × 4.8mm(突起物含む)
+
+・ 重量　4g以下
+
+・ 取付穴　M3x4、隣り合う穴の中心間距離24.4mm
+
+## 7.2 製品紹介
 
 <a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMUセンサ 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 低遅延 USB出力 ROS対応 | ROBOT翔・技術情報</a>
 
 <a href="https://youtu.be/N3I52f4gxq4">9軸IMUセンサ ICM-20948内蔵 6軸／9軸シュージョン 出力レート225Hz 低遅延 USB出力 ROS対応 | YouTube</a>
 
-## 7.2 取扱店舗
+## 7.3 取扱店舗
 
 <a href="https://store.soarcloud.com/products/detail/136">9軸IMUセンサ 6軸／9軸フュージョン 低遅延 USB出力 ROS対応 | ROBOT翔</a>
