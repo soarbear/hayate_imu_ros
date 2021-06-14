@@ -30,7 +30,7 @@ $sudo apt-get install ros-melodic-rosserial
 
 $sudo apt-get install ros-melodic-imu-tools
 
-## 2.2 Install hayate_imu_ros
+## 2.2 hayate_imu_rosのインストール
 
 $cd ~/catkin_ws/src
 
@@ -40,7 +40,7 @@ $cd ~/catkin_ws
 
 $catkin_make
 
-## 2.3 Parameters
+## 2.3 パラメータ
 
 - port: /dev/ttyACM_hayate
 
@@ -58,7 +58,7 @@ USBシリアルボーレート (デフォルト：115200 bps)
 
 地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
 
-## 2.4 Confirm Parameters
+## 2.4 パラメータの確認
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
@@ -70,7 +70,7 @@ $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 - 併せて、4.トラブルシューティングを参照する。
 
-## 2.5 Topics
+## 2.5 トピック
 
 - hayate_imu/data(sensor_msgs/Imu)
 
@@ -84,7 +84,7 @@ $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 　　-　地磁気(コンパス)3軸データ(geometry_msgs/Vector3)
 
-## 2.6 Confirm Topics
+## 2.6 トピックの確認
 
 - USBポート番号をttyACM_hayateに固定する。
 
