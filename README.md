@@ -46,17 +46,17 @@ $catkin_make
 
 USBポート /dev/ttyACM* (デフォルト：/dev/ttyACM_hayate)
 
-- baud: 115200
-
+- baud: 115200  
 USBシリアルボーレート (デフォルト：115200 bps)
 
-- output_rate_a: 225
+- output_rate_q: 225  
+6 軸または 9 軸融合四元数の出力レート(デフォルト：225Hz、レンジ：Min 1Hz  ～  Max 225Hz) 
 
-加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：225Hz、レンジ：Min 1Hz ～ Max 225Hz)
+- output_rate_a: 1  
+加速度センサ、ジャイロセンサの出力レート(デフォルト：1Hz、レンジ：Min 1Hz ～ Max 225Hz)
 
-- output_rate_m: 75
-
-地磁気出力レート(デフォルト：75Hz、レンジ：Min 1Hz ～ Max 75Hz))
+- output_rate_m: 1  
+地磁気出力レート(デフォルト：1Hz、レンジ：Min 1Hz ～ Max 75Hz))
 
 ## 2.4 パラメータの確認
 
@@ -134,21 +134,25 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 [INFO] [WallTime: 9876543210.0123456789] wrong checksum for topic id and msg
 
-- パラメータ@params.yaml: 出力レートoutput_rate_a、output_rate_mの設定例
+- パラメータ@params.yaml: output_rate_q、output_rate_a、output_rate_mの設定例
 
-ex1:  output_rate_a: 200   output_rate_m: 70
+Ex0: output_rate_q: 225    output_rate_a: 1      output_rate_m: 1 (デフォルト) 
 
-ex2:  output_rate_a: 100   output_rate_m: 70
+Ex1: output_rate_q: 100    output_rate_a: 1      output_rate_m: 1   
 
-ex3:  output_rate_a: 70    output_rate_m: 70
+Ex2: output_rate_q: 200    output_rate_a: 200 　 output_rate_m: 70 
 
-ex4:  output_rate_a: 50    output_rate_m: 50
+Ex3: output_rate_q: 100    output_rate_a: 100    output_rate_m: 70 
 
-- パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
+Ex4: output_rate_q: 70     output_rate_a: 70     output_rate_m: 70 
+
+Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
+
+- パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させてください。
 
 ## 4.2 9軸シュージョン
 
-地磁気センサが、環境(周囲の磁場、電磁デバイス)の影響を受けやすい場合がある。
+IMU が立ち上がってからの初期方位は実際の方位に合わない場合、IMU を X 軸、Y 軸、Z 軸を中心に数回、± 90 度回転させてみてください。また、地磁気センサが、環境(周囲の磁場、電磁デバイス)の影響を受けやすい場合がある。
 
 # 5. リリース
 
