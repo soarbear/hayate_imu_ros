@@ -1,6 +1,6 @@
 # 0. はじめに
 
-hayate-imuは、TDK Invensense ICM-20948を内蔵し、6軸/9軸センサフュージョン、3軸加速度データ、3軸角速度データ、3軸方位(地磁気)データをUSBから出力する9軸IMUセンサである。
+hayate_imuは、TDK Invensense ICM-20948を内蔵し、6軸/9軸センサフュージョン、3軸加速度データ、3軸角速度データ、3軸方位(地磁気)データをUSBから出力する9軸IMUセンサである。
 
 hayate_imu_rosは、9軸IMUセンサhayate-imu向けのROS Packageであり、その扱い方は以下に示す。
 
