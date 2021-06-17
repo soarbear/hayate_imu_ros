@@ -156,7 +156,7 @@ Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 
 # 5. リリース
 
-## 5. 1 ファームウェア
+## 5. 1 ハードウェア
 - v2.0 May 2021(最新版)  
 - v1.1 March 2021  
 ## 5. 2 マニュアル  
