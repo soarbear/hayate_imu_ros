@@ -96,13 +96,13 @@ $~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
 $roslaunch hayate_imu_ros hayate_imu.launch
 
-- Topicのデータを確認する。
+- トピックのデータを確認する。
 
 $rostopic echo hayate_imu/data
 
 $rostopic echo hayate_imu/magn
 
-- Topicの出力レートを確認する。
+- トピックの出力レートを確認する。
 
 $rostopic hz -w 100 hayate_imu/data
 
@@ -152,7 +152,7 @@ Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 
 ## 4.2 9軸シュージョン
 
-IMU が立ち上がってからの初期方位は実際の方位に合わない場合、IMU を X 軸、Y 軸、Z 軸を中心に数回、± 90 度回転させてみてください。また、地磁気センサが、環境(周囲の磁場、電磁デバイス)の影響を受けやすい場合がある。
+9軸シュージョンの場合、IMU が立ち上がってからの初期方位は実際の方位にオフセットがある場合、IMUをX軸、Y軸、Z軸の周りに連続数回、±90°回転させてみてください。また、地磁気センサが、環境(周囲の磁場、電磁デバイス)の影響を受けやすい場合がある。
 
 # 5. リリース
 
