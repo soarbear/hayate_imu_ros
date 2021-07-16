@@ -160,7 +160,8 @@ Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 - v2.0 May 2021(最新版)  
 - v1.1 March 2021  
 ## 5. 2 マニュアル  
-- v2.1 Jun 2021(最新版)  
+- v2.2 Jul 2021(最新版)  
+- v2.1 Jun 2021
 - v2.0 May 2021  
 
 # 6. ライセンス
