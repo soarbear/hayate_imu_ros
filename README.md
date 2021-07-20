@@ -208,7 +208,7 @@ Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 
 <a href="https://memo.soarcloud.com/icm-20948-cortex-m0%e5%86%85%e8%94%b5-9%e8%bb%b8imu-ros%e5%af%be%e5%bf%9c/">9軸IMUセンサ 6軸／9軸フュージョン ICM-20948 Cortex-M0+内蔵 低遅延 USB出力 ROS対応 | ROBOT翔・技術情報</a>
 
-<a href="https://youtu.be/N3I52f4gxq4">9軸IMUセンサ ICM-20948内蔵 6軸／9軸シュージョン 出力レート225Hz 低遅延 USB出力 ROS対応 | YouTube</a>
+<a href="https://youtu.be/44SPo_zulMc">9軸IMUセンサ ICM-20948内蔵 6軸／9軸シュージョン 出力レート225Hz 低遅延 USB出力 補正済み ROS対応 | YouTube</a>
 
 ## 7.3 取扱店舗
 
