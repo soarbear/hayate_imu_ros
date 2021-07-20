@@ -74,7 +74,7 @@ $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 - hayate_imu/data(sensor_msgs/Imu)
 
-　　-　ver.A 6軸フュージョン or ver.B 9軸フュージョン四元数(geometry_msgs/Quaternion)
+　　-　6軸フュージョン or 9軸フュージョン回転ベクトル四元数(geometry_msgs/Quaternion)
 
 　　-　加速度(アクセル)3軸データ(geometry_msgs/Vector3)
 
@@ -172,14 +172,14 @@ Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 
 ## 7.1 主な規格
 
-・ 型番　hayate_imu v2.0 ver.A 6軸フュージョン／ver.B 9軸フュージョン
+・ 型番　hayate_imu v2.0 rev.C 6軸フュージョン or 9軸フュージョン両方可能
 
 ・ 内蔵チップ　Cortex-M0+、TDK Invensense ICM-20948(9軸)実装
 
 ・ 外部接続　USB Type-Cコネクタ、USB+5V給電
 
 ・ 最大出力レート  
-　　-　ver.A 6軸フュージョン／ ver.B 9軸フュージョン四元数　225H  
+　　-　6軸フュージョン／9軸フュージョン四元数　225H  
 　　-　加速度(アクセル)3軸センサ　　225Hz  
 　　-　角速度(ジャイロ)3軸センサ　　225Hz  
 　　-　地磁気(コンパス)3軸センサ　　75Hz  
