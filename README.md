@@ -252,4 +252,4 @@ Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 
 ## 7.3 取扱店舗
 
-<a href="https://store.soarcloud.com/products/detail/136">9軸IMUセンサ 6軸／9軸フュージョン 低遅延 USB出力 ROS対応 | ROBOT翔</a>
+<a href="https://store.soarcloud.com/products/detail/136">9軸IMUセンサ 6軸／9軸フュージョン 低遅延 USB出力 補正済み ROS対応 | ROBOT翔</a>
