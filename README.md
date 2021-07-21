@@ -52,59 +52,59 @@ $catkin_make
 
 - output_rate_q: 200
 
-6 軸または 9 軸融合四元数の出力レート(デフォルト：200Hz、レンジ：Min 50Hz  ～  Max 225Hz) 
+  6 軸または 9 軸融合四元数の出力レート(デフォルト：200Hz、レンジ：Min 50Hz  ～  Max 225Hz) 
 
 - output_rate_a: 1
 
-加速度センサ、ジャイロセンサの出力レート(デフォルト：1Hz、レンジ：Min 1Hz ～ Max 225Hz)
+  加速度センサ、ジャイロセンサの出力レート(デフォルト：1Hz、レンジ：Min 1Hz ～ Max 225Hz)
 
 - output_rate_m: 1 
 
-地磁気出力レート(デフォルト：1Hz、レンジ：Min 1Hz ～ Max 75Hz))
+  地磁気出力レート(デフォルト：1Hz、レンジ：Min 1Hz ～ Max 75Hz))
 
 - bias_accel_x: 0
 
-加速度センサバイアスX(デフォルト：0、納品書に記載)
+  加速度センサバイアスX(デフォルト：0、納品書に記載)
 
 - bias_accel_y: 0
 
-加速度センサバイアスY(デフォルト：0、納品書に記載)
+  加速度センサバイアスY(デフォルト：0、納品書に記載)
 
 - bias_accel_z: 0
 
-加速度センサバイアスZ(デフォルト：0、納品書に記載)
+  加速度センサバイアスZ(デフォルト：0、納品書に記載)
 
 - bias_gyro_x: 0
 
-ジャイロセンサバイアスX(デフォルト：0、納品書に記載)
+  ジャイロセンサバイアスX(デフォルト：0、納品書に記載)
 
 - bias_gyro_y: 0
 
-ジャイロセンサバイアスY(デフォルト：0、納品書に記載)
+  ジャイロセンサバイアスY(デフォルト：0、納品書に記載)
 
 - bias_gyro_z: 0
 
-ジャイロセンサバイアスZ(デフォルト：0、納品書に記載)
+  ジャイロセンサバイアスZ(デフォルト：0、納品書に記載)
 
 - bias_magnet_x: 0
 
-地磁気センサバイアスX(デフォルト：0、納品書に記載)
+  地磁気センサバイアスX(デフォルト：0、納品書に記載)
 
 - bias_magnet_y: 0
 
-地磁気センサバイアスY(デフォルト：0、納品書に記載)
+  地磁気センサバイアスY(デフォルト：0、納品書に記載)
 
 - bias_magnet_z: 0
 
-地磁気センサバイアスZ(デフォルト：0、納品書に記載)
+  地磁気センサバイアスZ(デフォルト：0、納品書に記載)
 
 ## 2.4 パラメータの確認
 
 - params.yamlファイルにあるパラメータport、baud、output_rate_a、output_rate_mを確認して、必要に応じて変更する。
 
-$nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
+  $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
-または、$vim ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
+  または、$vim ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 - パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させる。
 
@@ -128,35 +128,35 @@ $nano ~/catkin_ws/src/hayate_imu_ros/config/params.yaml
 
 - USBポート番号をttyACM_hayateに固定する。
 
-$chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
+  $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
-$~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
+  $~/catkin_ws/src/hayate_imu_ros/scripts/create_rules.sh
 
 - hayate_imu_rosを起動する。
 
-$roslaunch hayate_imu_ros hayate_imu.launch
+  $roslaunch hayate_imu_ros hayate_imu.launch
 
 - トピックのデータを確認する。
 
-$rostopic echo hayate_imu/data
+  $rostopic echo hayate_imu/data
 
-$rostopic echo hayate_imu/magn
+  $rostopic echo hayate_imu/magn
 
 - トピックの出力レートを確認する。
 
-$rostopic hz -w 100 hayate_imu/data
+  $rostopic hz -w 100 hayate_imu/data
 
-$rostopic hz -w 100 hayate_imu/magn
+  $rostopic hz -w 100 hayate_imu/magn
 
 - また、USBポート番号のttyACM_hayateを解除する場合、
 
-$chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
+  $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
-$~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
+  $~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
 ## 2.7 6軸／9軸フュージョン四元数の可視化
 
-$roslaunch hayate_imu_ros hayate_imu_demo.launch
+  $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # 3. LED表示
 
@@ -176,17 +176,17 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 - パラメータ@params.yaml: output_rate_q、output_rate_a、output_rate_mの設定例
 
-Ex0: output_rate_q: 225    output_rate_a: 1      output_rate_m: 1 (デフォルト) 
+  Ex0: output_rate_q: 225    output_rate_a: 1      output_rate_m: 1 (デフォルト) 
 
-Ex1: output_rate_q: 100    output_rate_a: 1      output_rate_m: 1   
+  Ex1: output_rate_q: 100    output_rate_a: 1      output_rate_m: 1   
 
-Ex2: output_rate_q: 200    output_rate_a: 200 　 output_rate_m: 70 
+  Ex2: output_rate_q: 200    output_rate_a: 200 　 output_rate_m: 70 
 
-Ex3: output_rate_q: 100    output_rate_a: 100    output_rate_m: 70 
+  Ex3: output_rate_q: 100    output_rate_a: 100    output_rate_m: 70 
 
-Ex4: output_rate_q: 70     output_rate_a: 70     output_rate_m: 70 
+  Ex4: output_rate_q: 70     output_rate_a: 70     output_rate_m: 70 
 
-Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
+  Ex5: output_rate_q: 50     output_rate_a: 50     output_rate_m: 50
 
 - パラメータの変更があったら、hayate imuのUSBを抜き挿しして、もしくはRESETをかけて、再起動させてください。
 
