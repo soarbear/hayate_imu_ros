@@ -44,11 +44,11 @@ $catkin_make
 
 - port: /dev/ttyACM_hayate
 
- - USBポート /dev/ttyACM* (デフォルト：/dev/ttyACM_hayate)
+  USBポート /dev/ttyACM* (デフォルト：/dev/ttyACM_hayate)
 
 - baud: 115200 
 
- - USBシリアルボーレート (デフォルト：115200 bps)
+  USBシリアルボーレート (デフォルト：115200 bps)
 
 - output_rate_q: 200
 
