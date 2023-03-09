@@ -1,11 +1,43 @@
-# USBポート /dev/ttyACM* (デフォルト：/dev/ttyACM_hayate)
-port: /dev/ttyACM_hayate
+# USBポート /dev/ttyACM*(Defualt: /dev/ttyACM_hayate)
+# 使用ポート確認: ls -l /dev/ttyACM*
+port: /dev/ttyACM0
+#port: /dev/ttyACM_hayate
 
-# USBシリアルボーレート (デフォルト：115200 bps)
+# USBシリアルボーレート(Defaul: 115200 bps)
 baud: 115200
 
-# 加速度センサ、ジャイロセンサ、6軸または9軸融合四元数の出力レート(デフォルト：200Hz、レンジ：Min 1Hz ～ Max 200Hz)
-output_rate_a: 200
+# ワークモード: 0(Default, 通常出力モード), 1(初期バイアス較正モード), 2(デモモード)
+#work_mode: 0 # Noraml output mode
+#work_mode: 1 # Calibrtion mode
+work_mode: 2 # Demonstration mode
 
-# 地磁気出力レート(デフォルト：70Hz、レンジ：Min 1Hz ～ Max 70Hz))
+# フュージョンモード: 6(6軸フュージョン), 9(Default, 軸フュージョン)
+#fusion_mode: 6
+fusion_mode: 9
+
+# 加速度センサ, ジャイロセンサ, 6軸または9軸融合四元数の出力レート(Defualt: 225Hz, Range: Min 50Hz ～ Max 225Hz)
+output_rate_a: 225
+
+# 地磁気出力レート(Defualt: 70Hz, Range: Min 1Hz ～ Max 70Hz))
 output_rate_m: 70
+
+# ジャイロセンサバイアスX(Defaut: 0)
+bias_gyro_x: -27916
+# ジャイロセンサバイアスY(Defaut: 0)
+bias_gyro_y: 824
+# ジャイロセンサバイアスZ(Defaut: 0)
+bias_gyro_z: 17156
+
+# 加速度センサバイアスX(Defaut: 0)
+bias_accel_x: -1472
+# 加速度センサバイアスY(Defaut: 0)
+bias_accel_y: 582
+# 加速度センサバイアスZ(Defaut: 0)
+bias_accel_z: 1048
+
+# 地磁気センサバイアスX(Defaut: 0)
+bias_magnet_x: 2036384
+# 地磁気センサバイアスY(Defaut: 0)
+bias_magnet_y: 674368
+# 地磁気センサバイアスZ(Defaut: 0)
+bias_magnet_z: -4266880
