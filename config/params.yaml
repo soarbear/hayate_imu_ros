@@ -11,7 +11,7 @@ baud: 115200
 #work_mode: 1 # Calibrtion mode
 work_mode: 2 # Demonstration mode
 
-# フュージョンモード: 6(6軸フュージョン), 9(Default, 軸フュージョン)
+# フュージョンモード: 6(6軸フュージョン), 9(Default, 9軸フュージョン)
 #fusion_mode: 6
 fusion_mode: 9
 
@@ -22,22 +22,22 @@ output_rate_a: 225
 output_rate_m: 70
 
 # ジャイロセンサバイアスX(Defaut: 0)
-bias_gyro_x: -27916
+bias_gyro_x: 0
 # ジャイロセンサバイアスY(Defaut: 0)
-bias_gyro_y: 824
+bias_gyro_y: 0
 # ジャイロセンサバイアスZ(Defaut: 0)
-bias_gyro_z: 17156
+bias_gyro_z: 0
 
 # 加速度センサバイアスX(Defaut: 0)
-bias_accel_x: -1472
+bias_accel_x: 0
 # 加速度センサバイアスY(Defaut: 0)
-bias_accel_y: 582
+bias_accel_y: 0
 # 加速度センサバイアスZ(Defaut: 0)
-bias_accel_z: 1048
+bias_accel_z: 0
 
 # 地磁気センサバイアスX(Defaut: 0)
-bias_magnet_x: 2036384
+bias_magnet_x: 0
 # 地磁気センサバイアスY(Defaut: 0)
-bias_magnet_y: 674368
+bias_magnet_y: 0
 # 地磁気センサバイアスZ(Defaut: 0)
-bias_magnet_z: -4266880
+bias_magnet_z: 0
