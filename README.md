@@ -44,7 +44,7 @@ $catkin_make
 
 - imu_data(Message: hayate_imu_ros/ImuData), 通常出力モード用 
 
-- imu_cali(Message: hayate_imu_ros/ImuCali), 校正モード用
+- imu_cali(Message: hayate_imu_ros/ImuCali), 較正モード用
 
 - imu_demo(Message: sensor_msgs/Imu), デモモード用
 
