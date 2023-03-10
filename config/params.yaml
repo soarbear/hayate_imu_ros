@@ -21,23 +21,23 @@ output_rate_a: 225
 # 地磁気出力レート(Defualt: 70Hz, Range: Min 1Hz ～ Max 70Hz))
 output_rate_m: 70
 
-# ジャイロセンサバイアスX(Defaut: 0)
+# ジャイロセンサバイアスX(Defaut: 0, バイアス測定値の整数部分)
 bias_gyro_x: 0
-# ジャイロセンサバイアスY(Defaut: 0)
+# ジャイロセンサバイアスY(Defaut: 0, バイアス測定値の整数部分)
 bias_gyro_y: 0
-# ジャイロセンサバイアスZ(Defaut: 0)
+# ジャイロセンサバイアスZ(Defaut: 0, バイアス測定値の整数部分)
 bias_gyro_z: 0
 
-# 加速度センサバイアスX(Defaut: 0)
+# 加速度センサバイアスX(Defaut: 0, バイアス測定値の整数部分)
 bias_accel_x: 0
-# 加速度センサバイアスY(Defaut: 0)
+# 加速度センサバイアスY(Defaut: 0, バイアス測定値の整数部分)
 bias_accel_y: 0
-# 加速度センサバイアスZ(Defaut: 0)
+# 加速度センサバイアスZ(Defaut: 0, バイアス測定値の整数部分)
 bias_accel_z: 0
 
-# 地磁気センサバイアスX(Defaut: 0)
+# 地磁気センサバイアスX(Defaut: 0, バイアス測定値の整数部分)
 bias_magnet_x: 0
-# 地磁気センサバイアスY(Defaut: 0)
+# 地磁気センサバイアスY(Defaut: 0, バイアス測定値の整数部分)
 bias_magnet_y: 0
-# 地磁気センサバイアスZ(Defaut: 0)
+# 地磁気センサバイアスZ(Defaut: 0, バイアス測定値の整数部分)
 bias_magnet_z: 0
