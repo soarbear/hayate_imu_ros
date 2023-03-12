@@ -7,9 +7,9 @@ port: /dev/ttyACM0
 baud: 115200
 
 # ワークモード: 0(Default, 通常出力モード), 1(初期バイアス較正モード), 2(デモモード)
-#work_mode: 0 # Noraml output mode
-#work_mode: 1 # Calibrtion mode
-work_mode: 2 # Demonstration mode
+#work_mode: 0
+#work_mode: 1
+work_mode: 2
 
 # フュージョンモード: 6(6軸フュージョン), 9(Default, 9軸フュージョン)
 #fusion_mode: 6
