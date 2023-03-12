@@ -69,7 +69,7 @@ $rostopic echo imu_data
 
 $rostopic hz -w 100 imu_data
 
-- また、USBポート番号のttyACM_hayateを解除する場合、
+- また、USBポート番号のttyACM_hayateを解除する場合。
 
 $chmod +x ~/catkin_ws/src/hayate_imu_ros/scripts/delete_rules.sh
 
@@ -81,11 +81,11 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # 3. LED
 
-- Red = 電源供給USB+5V
+- Red点灯 = 電源供給中／USB+5V
 
-- Blue = パケット送受信
+- Blue点灯 = パケット送受信中
 
-- Yellow = 6軸／9軸フュージョン四元数出力 
+- Yellow点灯 = 6軸／9軸フュージョン四元数出力レディー
 
 # 4. リリース
 
