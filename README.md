@@ -13,7 +13,7 @@ hayate_imu_rosは、TDK Invensense ICM-20948を内蔵した9軸IMUセンサ haya
 
 # 2. 使用手順
 
-## 2.1 Install rosserial、rviz_imu_plugin
+## 2.1 Install rosserial
 
 ※注意 以下のdistroをご使用のROS Distributionに入れ替える。
 
@@ -22,14 +22,10 @@ $sudo apt-get update
 $rosversion -d
 
 $sudo apt-get install ros-distro-rosserial
-
-$sudo apt-get install ros-distro-imu-tools
   
-例：　ROS Distributionは melodicであれば、
+例：　ROS Distributionは melodicであれば、ros-melodic-rosserialをインストールする。
 
 $sudo apt-get install ros-melodic-rosserial
-
-$sudo apt-get install ros-melodic-imu-tools
 
 ## 2.2 Install hayate_imu_ros
 
@@ -40,6 +36,10 @@ $git clone https://github.com/soarbear/hayate_imu_ros.git
 $cd ~/catkin_ws
 
 $catkin_make
+
+もしくは、
+
+$catkin_make --only-pkg-with-deps hayate_imu_ros
 
 ## 2.5 Topics
 
