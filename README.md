@@ -89,11 +89,13 @@ $roslaunch hayate_imu_ros hayate_imu_demo.launch
 
 # 4. リリース
 
-- v2.4 March 2023. 較正モード、デモモード追加
+- v2.5 Dec 2023.
+
+- v2.4 Mar 2023. 較正モード、デモモード追加
 
 - v2.0 May 2021.
 
-- v1.1 March 2021.
+- v1.1 Mar 2021.
 
 # 5. ライセンス
 
